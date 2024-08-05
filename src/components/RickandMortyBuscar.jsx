@@ -30,7 +30,7 @@ export const RickandMortyBuscar = () => {
 
   return (
     <main className="flex flex-col gap-5 pb-4">
-      <div className="flex gap-2">
+      <div className="flex self-center gap-2">
         <input
           type="text"
           className="h-8 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-slate-800 focus:ring-2 focus:ring-slate-800 rounded-l-lg text-sm px-2 py-1"
@@ -51,7 +51,7 @@ export const RickandMortyBuscar = () => {
         resultado.map((element) => (
           <div
             key={element.id}
-            className="sombra flex w-[85vh] bg-[#5d5d5d] rounded-lg gap-2"
+            className="sombra flex w-[70vh] bg-[#5d5d5d] rounded-lg gap-2"
           >
             <img src={element.image} alt="" className="rounded-l-lg w-[45%]" />
             <div className="flex flex-col justify-evenly">
