@@ -51,10 +51,10 @@ export const RickandMortyBuscar = () => {
         resultado.map((element) => (
           <div
             key={element.id}
-            className="sombra flex-col w-[40vh] bg-[#5d5d5d] rounded-lg gap-2"
+            className="sombra flex flex-col md:flex-row w-[40vh] md:w-[80vh] bg-[#5d5d5d] rounded-lg gap-2"
           >
-            <img src={element.image} alt="" className="rounded-t-lg w-[100%] h-[250px]" />
-            <div className="flex flex-col  p-2">
+            <img src={element.image} alt="" className="rounded-t-lg md:rounded-l-lg md:rounded-r-none w-[100%] h-[250px] md:w-min" />
+            <div className="flex flex-col md:justify-evenly p-2">
               <h3 className="text-white font-bold text-xl">{element.name}</h3>
               <h3 className="flex items-center gap-2 text-white font-bold">
                 <div
