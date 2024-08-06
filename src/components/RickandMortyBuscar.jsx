@@ -30,10 +30,10 @@ export const RickandMortyBuscar = () => {
 
   return (
     <main className="flex flex-col justify-center items-center gap-5 pb-4">
-      <div className="flex self-center gap-2">
+      <div className="flex justify-center gap-2">
         <input
           type="text"
-          className="h-8 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-slate-800 focus:ring-2 focus:ring-slate-800 rounded-l-lg text-sm px-2 py-1"
+          className="h-8 w-[60%]  border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-slate-800 focus:ring-2 focus:ring-slate-800 rounded-l-lg text-sm px-2 py-1"
           placeholder="search name"
           onChange={(e) => {
             setBusqueda(e.target.value);
