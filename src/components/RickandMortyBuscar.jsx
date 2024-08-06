@@ -29,7 +29,7 @@ export const RickandMortyBuscar = () => {
   }, [busqueda, boton]);
 
   return (
-    <main className="flex flex-col gap-5 pb-4">
+    <main className="flex flex-col justify-center items-center gap-5 pb-4">
       <div className="flex self-center gap-2">
         <input
           type="text"
@@ -51,11 +51,11 @@ export const RickandMortyBuscar = () => {
         resultado.map((element) => (
           <div
             key={element.id}
-            className="sombra flex w-[70vh] bg-[#5d5d5d] rounded-lg gap-2"
+            className="sombra flex-col w-[40vh] bg-[#5d5d5d] rounded-lg gap-2"
           >
-            <img src={element.image} alt="" className="rounded-l-lg w-[45%]" />
-            <div className="flex flex-col justify-evenly">
-              <h3 className="text-white font-bold text-2xl">{element.name}</h3>
+            <img src={element.image} alt="" className="rounded-t-lg w-[100%] h-[250px]" />
+            <div className="flex flex-col  p-2">
+              <h3 className="text-white font-bold text-xl">{element.name}</h3>
               <h3 className="flex items-center gap-2 text-white font-bold">
                 <div
                   className={`w-2 h-2 rounded-full ${
@@ -65,18 +65,18 @@ export const RickandMortyBuscar = () => {
                 {element.status} - {element.species}
               </h3>
               <div>
-                <h6 className="font-bold opacity-60 text-lg">
+                <h6 className="font-bold opacity-60 text-base">
                   Última Ubicación:
                 </h6>
-                <h4 className="text-white font-semibold">
+                <h4 className="text-white font-semibold text-sm">
                   {element.location.name}
                 </h4>
               </div>
               <div>
-                <h6 className="font-bold opacity-60 text-lg">
+                <h6 className="font-bold opacity-60 text-base">
                   Visto Por Primera Vez:
                 </h6>
-                <h4 className="text-white font-semibold">
+                <h4 className="text-white font-semibold text-sm">
                   {element.origin.name}
                 </h4>
               </div>

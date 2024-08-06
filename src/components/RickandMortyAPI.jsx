@@ -30,7 +30,7 @@ export const RickandMortyAPI = () => {
     <>
       <div className="flex justify-around items-center w-full h-28 bg-[#141414]">
         <button
-          className="bg-gradient-to-r from-[#1b1843] via-[#3830a3] to-[#4438ca] w-28 h-10 rounded-lg flex justify-center items-center font-bold"
+          className="bg-gradient-to-l from-[#1b1843] via-[#3830a3] to-[#4438ca] w-28 h-10 rounded-lg flex justify-center items-center font-bold"
           onClick={() => ManejarBoton(pagina - 1)}
         >
           <IoIosArrowBack size={24} />
