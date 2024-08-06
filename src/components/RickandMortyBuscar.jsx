@@ -29,7 +29,7 @@ export const RickandMortyBuscar = () => {
   }, [busqueda, boton]);
 
   return (
-    <main className="flex flex-col justify-center items-center gap-5 pb-4 mx-2">
+    <main className="flex flex-col justify-center items-center gap-5 pb-4">
       <div className="flex self-center gap-2">
         <input
           type="text"
